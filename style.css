@@ -391,7 +391,7 @@
 }
 
 .footer-box h2 {
-    font-size: 35px;
+    font-size: 40px;
     color: #fff;
     padding: 0;
     margin: 0;
@@ -403,7 +403,11 @@
 }
 
 .footer-box .footer-socile {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     gap: 20px;
 }
 
@@ -416,6 +420,8 @@
 
 .footer-box p{
     color: #c6c6c6;
+    font-size: 14px;
+    font-weight: 200;
 }
 
 
@@ -479,17 +485,23 @@
     }
 
     #box-container{
-        padding: 100px 10px;
+        padding: 50px 10px;
+    }
+
+    #box-container .heading{
+        font-size: 30px;
     }
 
     .grid-section {
     display: grid;
+    gap: 20px 0px;
     justify-content: center;
     grid-template-columns: repeat(1, 1fr);
     }
     .box{
         padding: 20px;
     }
+
     #sidebar {
     grid-row: span 1;
     display: grid;
@@ -524,8 +536,13 @@
     }
 
     #host{
-        padding: 80px 20px;
+        padding: 20px 20px 80px;
     }
+
+    #host .host-section .host-info{
+    padding-left: 0px;
+    padding-top: 20px;
+}
 
     #host .host-section{
         display: flex;
@@ -546,5 +563,17 @@
         align-items: center
         
     }
+
+    #footer-section{
+        display: flex;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+
+    .footer-box .footer-socile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
 
 }
