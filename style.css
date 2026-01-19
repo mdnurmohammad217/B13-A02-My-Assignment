@@ -531,6 +531,7 @@
     grid-template-columns: repeat(1, 1fr);
     }
     .box{
+        box-sizing: border-box;
         padding: 20px 20px 40px;
     }
 
