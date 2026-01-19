@@ -480,7 +480,7 @@
     #hero-section .hero-circle img {
     position: absolute;
     width: 10%;
-    top: 13%;
+    top: 15%;
     left: 45%;
     }
 
@@ -531,7 +531,12 @@
     grid-template-columns: repeat(1, 1fr);
     }
     .box{
-        padding: 20px;
+        padding: 20px 20px 40px;
+    }
+
+    
+    .box p{
+        padding-top: 10px;
     }
 
     #sidebar {
@@ -539,7 +544,9 @@
     display: grid;
     justify-content: center;
     align-content: start;
+   
     }
+
     #topbar{
         grid-row: span 1;
     }
