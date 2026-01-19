@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
-#menu{
+#menu {
     width: 100%;
     max-width: 1280px;
     display: flex;
@@ -14,27 +14,35 @@
     padding: 10px 100px;
     margin: 0 auto;
     background-color: #1A0B2E;
+    border-bottom: 1px solid rgb(50, 50, 50);
 }
 
-#menu h2{
+#menu .fa-bars {
+    display: none;
+}
+
+#menu h2 {
     font-size: 35px;
     color: #fff;
     padding: 0;
     margin: 0;
 }
-#menu h2 .h-with{
+
+#menu h2 .h-with {
     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
 }
-#menu nav li{
+
+#menu nav li {
     display: inline;
     margin-right: 30px;
     color: #fff;
 }
+
 /* All Button Color class */
-.colorpro{
+.colorpro {
     background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
     padding: 10px 16px;
     color: #fff;
@@ -42,14 +50,25 @@
     font-weight: 500;
     border: none;
     border-radius: 25px;
-    
+
 }
 
-.colorpro:hover{
+/* .btn {
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    padding: 10px 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+} */
+
+.colorpro:hover {
     background: linear-gradient(-45deg, #F7E93F, #FB09B4, #9100F8);
     cursor: pointer;
 }
- /* .btn{
+
+/* .btn{
 
     padding: 12px 16px;
     color: #fff;
@@ -59,58 +78,51 @@
     border-radius: 25px;
  } */
 
-#hero-section{
+#hero-section {
     width: 100%;
     max-width: 1280px;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    /* flex-direction: column; */
     padding: 100px;
     margin: 0 auto;
     background-color: #6e4d99;
-    background-image: url(images/hero-bg.png); 
+    background-image: url(images/hero-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     
+
 }
 
-#hero-section .hero-bg{
+#hero-section .circlepro img {
+    width: 300px;
+    height: auto;
+    align-items: center;
+    position: relative;
+
+}
+
+#hero-section .hero-circle img {
+    position: absolute;
+    width: 10%;
+    top: 30%;
+    left: 45%;
+}
+
+/* .techwave{
+    width: 100%;
+    max-width: 1280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
+    background-color: #1A0B2E;
 }
 
-#hero-section .circlepro img{
-    width: 280px;
-    height: auto;
-    position: relative;
-    
-}
-
-#hero-section .hero-circle img{
-    position: absolute;
-    width: 9%;
-    top: 32%;
-    left: 45.5%;
-}
-
-#hero-section h2{
-    color: #fff;
-    font-size: 40px;
-    padding: 20px 0px 0;
-}
-
-#hero-section p{
-    font-size: 16px;
-    color: #fff;
-    font-weight: 300;
-    padding: 15px 0;
-}
-#hero-section .hero-btn .Subscribe{
+.techwave .Subscribe{
     background-color: rgba(255, 0, 0, 0);
     padding: 10px 16px;
     color: #00FF88;
@@ -120,8 +132,46 @@
     border-radius: 25px;
 }
 
-#about{
-     width: 100%;
+
+.techwave  h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 20px 0px;
+}
+.techwave  p{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    padding: 15px 0;
+} */
+
+#hero-section h2 {
+    color: #fff;
+    font-size: 40px;
+    padding: 20px 0px 0;
+}
+
+#hero-section p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    padding: 15px 0;
+    text-align: center;
+} 
+
+ #hero-section .hero-btn .Subscribe {
+    background-color: rgba(255, 0, 0, 0);
+    padding: 10px 16px;
+    color: #00FF88;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #00FF88;
+    border-radius: 25px;
+}
+
+
+#about {
+    width: 100%;
     max-width: 1280px;
     /* height: 90vh; */
     display: flex;
@@ -135,13 +185,14 @@
     background-color: #1A0B2E;
 }
 
-#about .about-heading h2{
+#about .about-heading h2 {
     text-align: center;
     color: #fff;
     font-size: 48px;
-    
+
 }
-#about .about-heading p{
+
+#about .about-heading p {
     text-align: center;
     color: #fff;
     font-size: 16px;
@@ -150,50 +201,53 @@
     padding: 20px 0;
 }
 
-#about .earning{
+#about .earning {
     display: flex;
     justify-content: space-evenly;
     gap: 100px;
 }
 
-.earning h2{
+.earning h2 {
     color: #00FF88;
     font-size: 35px;
     font-weight: 900;
     text-align: center;
 }
-.earning p{
+
+.earning p {
     color: #fff;
     font-size: 16px;
     text-align: center;
     font-weight: 300;
 }
 
-#box-container{
+#box-container {
     width: 100%;
     max-width: 1280px;
     padding: 100px;
     background-color: #230E3D;
 
 }
-#box-container .heading{
+
+#box-container .heading {
     text-align: center;
-    font-size:  42px;
+    font-size: 42px;
     font-weight: 700;
     color: #fff;
     padding-bottom: 50px;
 }
-.grid-section{
+
+.grid-section {
     width: 100%;
     max-width: 1280px;
     display: grid;
     gap: 20px;
-    
+
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 220px);
 }
 
-.box{
+.box {
     /* border: 2px solid sandybrown ; */
     background-color: #351165b0;
     color: #fff;
@@ -201,28 +255,29 @@
     padding: 30px;
     box-sizing: border-box;
 }
-.box h2{
-    padding-top: 10px ;
+
+.box h2 {
+    padding-top: 10px;
     font-size: 24px;
     font-weight: bold;
 }
 
-.box p{
+.box p {
     font-size: 16px;
     font-weight: 200;
     padding: 15px 0;
-    
+
 }
 
-#sidebar{
+#sidebar {
     grid-row: span 2;
     display: grid;
     justify-content: center;
     align-content: center;
-    
+
 }
 
-#topbar{
+#topbar {
     grid-column: span 2;
     display: grid;
     justify-content: start;
@@ -233,8 +288,47 @@
 
 
 
-@media screen and (max-widht:576px) {
-    #menu nav li{
-    display: none;
+@media screen and (max-width:576px) {
+    #menu, #hero-section {
+        padding: 10px;
+        margin: 0 auto;
     }
+
+    #menu .hiddan {
+        display: none;
+    }
+
+    #menu .fa-bars {
+        display: block;
+        color: #fff;
+        font-size: 35px;
+    }
+
+    #hero-section {
+    padding-top: 100px;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #hero-section .circlepro img {
+    margin-top: 30px;
+    width: 120px;
+    height: auto;
+    position: relative;
+
+    }
+
+    #hero-section .hero-circle img {
+    position: absolute;
+    width: 8%;
+    top: 18%;
+    left: 46%;
+    }
+
+    
+
+
 }
