@@ -106,8 +106,22 @@
 #hero-section .hero-circle img {
     position: absolute;
     width: 8%;
-    top: 33%;
+    top: 30%;
     left: 46%;
+}
+
+#hero-section .beg{
+    padding: 5px 12px;
+    background-color: #00FF88;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    position: relative;
+    top: 40px;
+    left: 90px;
+    z-index: 10;
+    box-shadow: 2px 2px 30px #00ff8879;
+    font-weight: 700;
 }
 
 
@@ -154,6 +168,7 @@
     text-align: center;
     color: #fff;
     font-size: 48px;
+    
 
 }
 
@@ -468,6 +483,20 @@
     top: 10%;
     left: 46%;
     }
+
+    #hero-section .beg{
+    padding: 4px 10px;
+    background-color: #00FF88;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    position: relative;
+    top: 60px;
+    left: 45px;
+    z-index: 10;
+    box-shadow: 2px 2px 30px #00ff8879;
+    font-weight: 700;
+}
 
     #about{
         padding: 130px 10px;
