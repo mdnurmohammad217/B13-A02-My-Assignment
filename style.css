@@ -340,7 +340,10 @@
     margin: 0 auto;
     padding: 20px 100px 100px;
     background-color: #1A0B2E;
+   
 }
+
+
 
 #host .host-section{
     display: flex;
@@ -351,6 +354,20 @@
     color: #fff;
     padding: 30px;
     border-radius: 25px;
+     animation: bigboss 4s ease-in-out infinite;
+}
+
+@keyframes bigboss {
+    0%{
+        opacity: 1;
+        transform: scale(1) ;
+    }
+    
+    100%{
+        opacity: 0;
+        transform: scale(0.25);
+        background-color: #22002d;
+    }
 }
 
 .host-info h2{
@@ -503,10 +520,12 @@
     }
 
      #about .about-heading h2{
+        padding-top: 60px;
         font-size: 35px;
      }
+
      #about .about-heading p{
-        font-size: 14px;
+        font-size: 16px;
         color: rgb(161, 161, 161);
      }
 
